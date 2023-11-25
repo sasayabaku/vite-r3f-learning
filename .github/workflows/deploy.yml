@@ -2,10 +2,10 @@ name: deploy
 
 on:
   pull_request:
-    types: 
+    types:
       - opened
     branches:
-      - '**'
+      - "**"
 
   workflow_dispatch:
 
@@ -22,11 +22,11 @@ jobs:
     steps:
       - name: checkout tagged branch
         uses: actions/checkout@v3
-      
+
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'yarn'
+          cache: "yarn"
 
       - name: Build Check
         run: |
