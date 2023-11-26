@@ -15,5 +15,6 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "off",
     "react/no-unknown-property": "off",
     "import/namespace": "off",
+    "no-unused-vars": "on",
   },
 };
